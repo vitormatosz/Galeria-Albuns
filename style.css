@@ -1,0 +1,249 @@
+ul { /*tirando padding e style da lista */
+  padding: 0;
+  list-style: none;
+}
+
+a { /*tirando decoração dos links (a)*/
+  text-decoration: none;
+}
+
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/*Header Styles*/
+
+.headerCont {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  height: 40vh;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.itemLink { /*Titulo principal*/
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 0px 1px 60px rgba(255, 255, 255, 0.8);
+}
+
+.sombra1{ /*div para controlar sombra da galeria*/
+  background-color: white;
+  width: 100%;
+  height: 5vh;
+  box-shadow: 0px 0px 70px 80px rgb(255, 255, 255);
+}
+
+
+/*Galeria*/
+
+.galeria { /*section da galeria*/
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 100px;
+  padding: 120px;
+  padding-top: 2px;
+  padding-bottom: 40px;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.877);
+  
+}
+
+.ft1 { /*foto 1 BK - amanhecer*/
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 8;
+  background-image: url("./img/BKamanhecer.jpg");
+  background-position: center;
+  border-radius: 4px;
+  box-shadow: -5px -5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ft2 { /*foto 2 Kyan*/
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  background-image: url("./img/kyan.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow: -5px -5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ft3 { /*foto 3 Frank Ocean - Change Orange*/
+  grid-column-start: 3;
+  grid-row-start: 5;
+  grid-row-end: 8;
+  background-image: url("./img/frankocean.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow: -5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ft4 { /*foto 4 Tyler, The creator - Igor*/
+  grid-column-start: 2;
+  grid-row-start: 5;
+  grid-row-end: 8;
+  background-image: url("./img/tylerIgor.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow: -5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ft5 { /*foto 5 Racionais - Sobrevivendo ao inferno*/
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 8;
+  grid-row-end: 14;
+  background-image: url("./img/racionaisSobre.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow: -5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ft6 { /*foto 6 BK - SVANTE*/
+  grid-column-start: 4;
+  grid-row-start: 5;
+  grid-row-end: 8;
+  background-image: url("./img/bkDLRE.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+
+}
+
+.ft7 { /*foto 7 Djonga - o Menino que queria ser Deus*/
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  background-image: url("./img/djonga.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  box-shadow: 5px -5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ft8 { /*foto 8 Daniel Ceasar - Freudian*/
+  grid-column-start: 1;
+  grid-row-start: 11;
+  grid-row-end: 14;
+  background-image: url("./img/danielcaesar.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow: -5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ft9 { /*foto 9 Baco Exu do Blues - Bluesman*/
+  grid-column-start: 4;
+  grid-row-start: 11;
+  grid-row-end: 14;
+  background-image: url("./img/bacoexu.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ft10 { /*foto 10 BK - Castelos e Ruinas*/
+  grid-column-start: 1;
+  grid-row-start: 8;
+  grid-row-end: 11;
+  background-image: url("./img/bkCastelos.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow: -5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ft11 { /*foto 11 Tyler, the creator - Flower Boy*/
+  grid-column-start: 4;
+  grid-row-start: 8;
+  grid-row-end: 11;
+  background-image: url("./img/tylerSeeyou.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ft12 { /*foto 12 Sabotage*/
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 14;
+  grid-row-end: 16;
+  background-image: url("./img/sabotage.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow: -5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ft13 { /*foto 13 Jorge Ben Jor - A Tabua de Esmeralda*/
+  grid-column-start: 4;
+  grid-row-start: 14;
+  grid-row-end: 16;
+  background-image: url("./img/jorgeben.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ft14 { /*foto 14 Tim Maia - Tim Maia 1971*/
+  grid-column-start: 3;
+  grid-row-start: 14;
+  grid-row-end: 16;
+  background-image: url("./img/timMaia.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow: -5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Informações Escolares
+
+.attribution1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  color: white;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  height: 5px;
+}
+
+.attribution2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  height: 80px;
+}
+
+*/
